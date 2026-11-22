@@ -1,0 +1,10 @@
+# editor / OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+# local backups (kept outside the repo)
+*.backup*
+backup*/
