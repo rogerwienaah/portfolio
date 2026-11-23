@@ -294,6 +294,12 @@ main .profile p, main .meta, main .xp-org, main .xp-date, main .date,
 main .card p, main .pub .venue, main .todo, main .slide-caption, main .album-bar,
 .nav li, .socials li, .links li, .chips, .tags {
   text-align: inherit;
+  text-align-last: auto;
   -webkit-hyphens: manual;
   hyphens: manual;
+}
+/* Phones: justified text leaves big word gaps on narrow lines, so use normal left-aligned text */
+@media (max-width: 700px) {
+  main p, main .dated li > span:not(.date), main .xp-item li, main .project li, article.post li { text-align: left; }
+  main .profile p { text-align: center; }
 }
